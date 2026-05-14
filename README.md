@@ -36,6 +36,8 @@ Data Isolation: Strict separation between teams; users only see their own team's
 Advanced Filtering: Dashboard with filters for Task Status and Assigned Employees.
 <img width="1910" height="947" alt="image" src="https://github.com/user-attachments/assets/fe8f896a-b5c3-42c6-b856-030475ebf59b" />
 <img width="1905" height="904" alt="image" src="https://github.com/user-attachments/assets/064c7975-45f6-4950-9a80-ac2bc0fbabdd" />
+<img width="1912" height="893" alt="image" src="https://github.com/user-attachments/assets/12df3725-9cd0-4e3d-bcfe-76da74ea6d0f" />
+
 
 Automated Workflow: Logic-driven status changes based on user actions.
 <img width="1911" height="920" alt="image" src="https://github.com/user-attachments/assets/cef54085-0aad-410a-8c78-5e132f1f34ef" />
