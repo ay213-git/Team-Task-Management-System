@@ -37,7 +37,7 @@ Advanced Filtering: Dashboard with filters for Task Status and Assigned Employee
 
 Automated Workflow: Logic-driven status changes based on user actions.
 <img width="1911" height="920" alt="image" src="https://github.com/user-attachments/assets/cef54085-0aad-410a-8c78-5e132f1f34ef" />
-<img width="1901" height="894" alt="image" src="https://github.com/user-attachments/assets/f81c9faf-c90f-4eea-bd5c-da32497cf433" />
+<img width="1914" height="936" alt="image" src="https://github.com/user-attachments/assets/d8d292a4-df5a-4fb1-9edf-976ceec1c019" />
 
 
 
