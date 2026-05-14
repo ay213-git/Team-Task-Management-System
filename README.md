@@ -34,6 +34,7 @@ Key Features
 Data Isolation: Strict separation between teams; users only see their own team's data.
 
 Advanced Filtering: Dashboard with filters for Task Status and Assigned Employees.
+<img width="1910" height="947" alt="image" src="https://github.com/user-attachments/assets/fe8f896a-b5c3-42c6-b856-030475ebf59b" />
 
 Automated Workflow: Logic-driven status changes based on user actions.
 <img width="1911" height="920" alt="image" src="https://github.com/user-attachments/assets/cef54085-0aad-410a-8c78-5e132f1f34ef" />
