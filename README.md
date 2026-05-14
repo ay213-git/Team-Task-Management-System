@@ -41,9 +41,12 @@ Automated Workflow: Logic-driven status changes based on user actions.
 <img width="1914" height="936" alt="image" src="https://github.com/user-attachments/assets/d8d292a4-df5a-4fb1-9edf-976ceec1c019" />
 
 <img width="1914" height="890" alt="image" src="https://github.com/user-attachments/assets/42c6eec0-45c9-4fc0-a652-0b7c8ab0f5df" />
+<img width="1914" height="889" alt="image" src="https://github.com/user-attachments/assets/01a27d61-b530-4106-805c-7373d8e41a44" />
+
 
 <img width="1914" height="889" alt="image" src="https://github.com/user-attachments/assets/9a97a97c-f6e1-44fb-bfb1-b08e6e05a9bc" />
 
 Clean Code & DRY: Implemented with a focus on modular architecture and code
 <img width="1913" height="940" alt="image" src="https://github.com/user-attachments/assets/f2d9d174-f81a-4649-b70d-89b97ada742c" />
 <img width="1914" height="890" alt="image" src="https://github.com/user-attachments/assets/de1cfc9b-356d-4ba6-8689-06ccaeb52248" />
+`
