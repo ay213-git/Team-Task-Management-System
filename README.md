@@ -36,5 +36,7 @@ Data Isolation: Strict separation between teams; users only see their own team's
 Advanced Filtering: Dashboard with filters for Task Status and Assigned Employees.
 
 Automated Workflow: Logic-driven status changes based on user actions.
+<img width="1911" height="920" alt="image" src="https://github.com/user-attachments/assets/cef54085-0aad-410a-8c78-5e132f1f34ef" />
+
 
 Clean Code & DRY: Implemented with a focus on modular architecture and code
