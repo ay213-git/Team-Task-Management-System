@@ -37,6 +37,8 @@ Advanced Filtering: Dashboard with filters for Task Status and Assigned Employee
 
 Automated Workflow: Logic-driven status changes based on user actions.
 <img width="1911" height="920" alt="image" src="https://github.com/user-attachments/assets/cef54085-0aad-410a-8c78-5e132f1f34ef" />
+<img width="1901" height="894" alt="image" src="https://github.com/user-attachments/assets/f81c9faf-c90f-4eea-bd5c-da32497cf433" />
+
 
 
 Clean Code & DRY: Implemented with a focus on modular architecture and code
