@@ -50,10 +50,6 @@ Clean Code & DRY: Implemented with a focus on modular architecture and code
 
 
 
-
-
-
-
 <img width="1896" height="886" alt="image" src="https://github.com/user-attachments/assets/df183fae-d62e-440e-82c1-3149daa1a697" />
 
 
