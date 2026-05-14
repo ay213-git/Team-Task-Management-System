@@ -43,12 +43,13 @@ Clean Code & DRY: Implemented with a focus on modular architecture and code
 
 <img width="1912" height="893" alt="image" src="https://github.com/user-attachments/assets/12df3725-9cd0-4e3d-bcfe-76da74ea6d0f" />
 <img width="1914" height="936" alt="image" src="https://github.com/user-attachments/assets/d8d292a4-df5a-4fb1-9edf-976ceec1c019" />
+<img width="1914" height="889" alt="image" src="https://github.com/user-attachments/assets/01a27d61-b530-4106-805c-7373d8e41a44" />
+
 <img width="1910" height="947" alt="image" src="https://github.com/user-attachments/assets/fe8f896a-b5c3-42c6-b856-030475ebf59b" />
 
 
 
 
-<img width="1914" height="889" alt="image" src="https://github.com/user-attachments/assets/01a27d61-b530-4106-805c-7373d8e41a44" />
 
 
 
