@@ -1,0 +1,1 @@
+document.addEventListener('DOMContentLoaded',()=>{const buttons=document.querySelectorAll('.btn');buttons.forEach(b=>{b.addEventListener('mouseenter',()=>{b.style.boxShadow='0 0 18px rgba(0,232,255,.22)'});b.addEventListener('mouseleave',()=>{b.style.boxShadow='none'})})});

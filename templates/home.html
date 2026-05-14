@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block header_title %}Home{% endblock %}
+
+{% block content %}
+<section style="display:grid; gap:16px;">
+    <div class="card" style="padding:24px; text-align:center;">
+        <h1 style="margin:0 0 8px;">Welcome to the Team Task Management System</h1>
+        <p style="color:#9ca3af; margin:0 0 16px;">A modern, fast, and precise way to manage team performance.</p>
+
+        {% if user.is_authenticated %}
+            <a class="btn btn-primary" href="{% url 'task_list' %}">Go to Task Board</a>
+        {% else %}
+            <div style="display:flex; gap:8px; justify-content:center;">
+                <a class="btn btn-primary" href="{% url 'login' %}">Login</a>
+                <a class="btn" href="{% url 'register' %}">Register</a>
+            </div>
+        {% endif %}
+    </div>
+
+    <div class="card" style="padding:16px;">
+        <div style="display:flex; gap:12px; justify-content:center; color:#9ca3af; font-size:12px;">
+            <span>Copyright © 2026</span>
+            <span>•</span>
+            <span>Early Release</span>
+        </div>
+    </div>
+</section>
+{% endblock %}

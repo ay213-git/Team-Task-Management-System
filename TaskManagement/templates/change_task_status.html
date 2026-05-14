@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block header_title %}Change Task Status{% endblock %}
+
+{% block content %}
+<div class="card">
+    <h2>Change Task Status</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <div class="actions">
+            <button type="submit" class="btn primary">Save</button>
+        </div>
+    </form>
+</div>
+{% endblock %}

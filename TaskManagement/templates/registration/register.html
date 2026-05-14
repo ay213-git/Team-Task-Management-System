@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+{% block header_title %}Register{% endblock %}
+
+{% block content %}
+<div class="card" style="max-width:640px;margin:0 auto;">
+    <div class="card-title">Create a new account</div>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.non_field_errors }}
+
+        <div>
+            <label for="{{ form.username.id_for_label }}">Username</label>
+            {{ form.username }}
+            {{ form.username.errors }}
+        </div>
+
+        <div>
+            <label for="{{ form.password1.id_for_label }}">Password</label>
+            {{ form.password1 }}
+            {{ form.password1.errors }}
+        </div>
+
+        <div>
+            <label for="{{ form.password2.id_for_label }}">Confirm Password</label>
+            {{ form.password2 }}
+            {{ form.password2.errors }}
+        </div>
+
+        <div>
+            <label for="{{ form.team.id_for_label }}">Team</label>
+            {{ form.team }}
+            {{ form.team.errors }}
+        </div>
+
+        <div>
+            <label for="{{ form.new_team_name.id_for_label }}">Create New Team (optional)</label>
+            {{ form.new_team_name }}
+            {{ form.new_team_name.errors }}
+            <small>Select an existing team or enter a new team name.</small>
+        </div>
+
+        <div>
+            <label for="{{ form.role.id_for_label }}">Role</label>
+            {{ form.role }}
+            {{ form.role.errors }}
+        </div>
+
+        <div class="card-actions" style="justify-content:flex-end;">
+            <button type="submit" class="btn btn-primary">Register</button>
+            <a href="{% url 'login' %}" class="btn">Login</a>
+        </div>
+    </form>
+</div>
+{% endblock %}

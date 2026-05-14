@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block header_title %}Login{% endblock %}
+
+{% block content %}
+<div class="card" style="max-width:520px;margin:0 auto;">
+    <div class="card-title">Log in to your account</div>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.non_field_errors }}
+
+        <div>
+            <label for="{{ form.username.id_for_label }}">Username</label>
+            {{ form.username }}
+            {{ form.username.errors }}
+        </div>
+
+        <div>
+            <label for="{{ form.password.id_for_label }}">Password</label>
+            {{ form.password }}
+            {{ form.password.errors }}
+        </div>
+
+        <div class="card-actions" style="justify-content:flex-end;">
+            <button type="submit" class="btn btn-primary">Login</button>
+            <a href="{% url 'register' %}" class="btn">Register</a>
+        </div>
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block header_title %}Add New Task{% endblock %}
+
+{% block content %}
+<div class="card">
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button class="btn btn-primary" type="submit">Save</button>
+    </form>
+    <div style="margin-top:8px; color:#9ca3af; font-size:12px;">
+        The due date must be later than today. Status is set to "To Do" and the task is assigned to your team.
+    </div>
+    
+</div>
+{% endblock %}

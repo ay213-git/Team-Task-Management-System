@@ -1,0 +1,36 @@
+{% load static %}
+<!!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Task Management System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'TaskManagement/css/style.css' %}">
+</head>
+<body>
+    <div class="app-shell">
+        <aside class="sidebar">
+            <div class="logo">TM</div>
+            <nav class="nav">
+                <a class="nav-item active" href="{% url 'task_list' %}">Tasks</a>
+                <!-- <a class="nav-item" href="{% url 'home' %}">Home</a> -->
+            </nav>
+        </aside>
+        <div class="main">
+            <header class="header">
+                <div class="title">{% block header_title %}Task List{% endblock %}</div>
+                <div class="actions">
+                    {% include 'partials/logout_button.html' %}
+                </div>
+            </header>
+            <main class="content">
+                {% block content %}{% endblock %}
+            </main>
+        </div>
+    </div>
+    <script src="{% static 'TaskManagement/js/app.js' %}"></script>
+</body>
+</html>

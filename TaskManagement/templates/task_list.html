@@ -1,0 +1,113 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<form class="filters" method="get">
+    <label for="status">Status:</label>
+    <select name="status" id="status">
+        <option value="">All</option>
+        <option value="new">To Do</option>
+        <option value="in_progress">In Progress</option>
+        <option value="completed">Completed</option>
+    </select>
+
+    <label for="assigned_to">Assignee:</label>
+    <select name="assigned_to" id="assigned_to">
+        <option value="">All</option>
+        {% for user in request.user.team.members.all %}
+        <option value="{{ user.username }}">{{ user.username }}</option>
+        {% endfor %}
+    </select>
+
+    <button class="btn btn-primary" type="submit">Filter</button>
+</form>
+
+{% if request.user.role == 'manager' %}
+    <a class="btn btn-primary" href="{% url 'add_task' %}">Add Task</a>
+{% endif %}
+
+<section class="kanban">
+    <div class="column">
+        <div class="column-header">
+            <div class="column-title">To Do</div>
+            <div class="count">{% if tasks_new %}{{ tasks_new|length }}{% else %}0{% endif %}</div>
+        </div>
+        <div class="cards">
+            {% for task in tasks_new %}
+            <div class="card">
+                <div>
+                    <div class="card-title">{{ task.name }}</div>
+                    <div class="card-meta">{{ task.assigned_to }} • {{ task.due_date }}</div>
+                </div>
+                <div class="card-actions">
+                    <span class="status-chip status-new">To Do</span>
+                    {% if request.user.role == 'manager' and not task.assigned_to %}
+                        <a class="btn btn-primary" href="{% url 'edit_task' task.id %}">Edit</a>
+                        <form method="post" action="{% url 'delete_task' task.id %}">
+                            {% csrf_token %}
+                            <button class="btn btn-danger" type="submit" onclick="return confirm('Delete this task?');">Delete</button>
+                        </form>
+                    {% endif %}
+                    {% if request.user.role == 'worker' and not task.assigned_to %}
+                        <form method="post" action="{% url 'assign_task' task.id %}">
+                            {% csrf_token %}
+                            <button class="btn btn-primary" type="submit">Assign to me</button>
+                        </form>
+                    {% endif %}
+                </div>
+            </div>
+            {% empty %}
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="column-header">
+            <div class="column-title">In Progress</div>
+            <div class="count">{% if tasks_in_progress %}{{ tasks_in_progress|length }}{% else %}0{% endif %}</div>
+        </div>
+        <div class="cards">
+            {% for task in tasks_in_progress %}
+            <div class="card">
+                <div>
+                    <div class="card-title">{{ task.name }}</div>
+                    <div class="card-meta">{{ task.assigned_to }} • {{ task.due_date }}</div>
+                </div>
+                <div class="card-actions">
+                    <span class="status-chip status-inprogress">In Progress</span>
+                    {% if request.user.role == 'worker' and task.assigned_to == request.user %}
+                        <form method="post" action="{% url 'complete_task' task.id %}">
+                            {% csrf_token %}
+                            <button class="btn" type="submit">Mark as complete</button>
+                        </form>
+                    {% endif %}
+                </div>
+            </div>
+            {% empty %}
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="column-header">
+            <div class="column-title">Completed</div>
+            <div class="count">{% if tasks_completed %}{{ tasks_completed|length }}{% else %}0{% endif %}</div>
+        </div>
+        <div class="cards">
+            {% for task in tasks_completed %}
+            <div class="card">
+                <div>
+                    <div class="card-title">{{ task.name }}</div>
+                    <div class="card-meta">{{ task.assigned_to }} • {{ task.due_date }}</div>
+                </div>
+                <div class="card-actions">
+                    <span class="status-chip status-completed">Completed</span>
+                </div>
+            </div>
+            {% empty %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+{% endblock %}
