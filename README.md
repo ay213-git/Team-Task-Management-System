@@ -32,16 +32,17 @@ Status Management: Update the progress of assigned tasks.
 
 Key Features
 Data Isolation: Strict separation between teams; users only see their own team's data.
+<img width="1911" height="920" alt="image" src="https://github.com/user-attachments/assets/cef54085-0aad-410a-8c78-5e132f1f34ef" />
 
 Advanced Filtering: Dashboard with filters for Task Status and Assigned Employees.
-<img width="1910" height="947" alt="image" src="https://github.com/user-attachments/assets/fe8f896a-b5c3-42c6-b856-030475ebf59b" />
 <img width="1905" height="904" alt="image" src="https://github.com/user-attachments/assets/064c7975-45f6-4950-9a80-ac2bc0fbabdd" />
 <img width="1912" height="893" alt="image" src="https://github.com/user-attachments/assets/12df3725-9cd0-4e3d-bcfe-76da74ea6d0f" />
 
 
 Automated Workflow: Logic-driven status changes based on user actions.
-<img width="1911" height="920" alt="image" src="https://github.com/user-attachments/assets/cef54085-0aad-410a-8c78-5e132f1f34ef" />
 <img width="1914" height="936" alt="image" src="https://github.com/user-attachments/assets/d8d292a4-df5a-4fb1-9edf-976ceec1c019" />
+<img width="1910" height="947" alt="image" src="https://github.com/user-attachments/assets/fe8f896a-b5c3-42c6-b856-030475ebf59b" />
+
 
 <img width="1914" height="890" alt="image" src="https://github.com/user-attachments/assets/42c6eec0-45c9-4fc0-a652-0b7c8ab0f5df" />
 <img width="1914" height="889" alt="image" src="https://github.com/user-attachments/assets/01a27d61-b530-4106-805c-7373d8e41a44" />
